@@ -353,6 +353,26 @@ nav ul li a {
 
 /*Produtos - fim*/
 
+/*miniBanner*/
+.miniBanner{
+    width: 80%;
+    display: inline;
+    margin-left: 10%;
+    justify-items: center;
+}
+
+.miniBanner img{
+    width: 400px;
+    height: fit-content;
+}
+/*miniBanner*/
+
+/*PromBanner*/
+.prmotionBanner{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
 
 
 
