@@ -1,0 +1,311 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    
+}
+
+img {
+    border: none;
+    outline: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    border: none;
+    outline: none;
+    
+}
+
+
+/*Menu*/
+.container {
+    margin-top: 3%;
+    width: 90%;
+    
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    
+    float: left;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+}
+
+header nav ul li {
+    border-left: 3px solid #00A9E0;
+    border-right: 3px solid #00A9E0;
+    padding: 0.7rem 4rem 0.7rem 4rem;
+    border-radius: 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+
+.search{
+    display: flex;
+    width: 437px;
+    height: 2.5rem;
+    border-radius: 20px;
+    float: left;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 3px 5px 0 40px ;
+    
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+}
+
+.btn-header {
+    width: 3.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+   
+
+    float: left;
+    border-radius: 10px;
+    background: #00A9E0;
+    margin-right: 15px;   
+}
+
+.icn-header {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icn-header-space{
+    margin-left: 10rem;
+    justify-content: end;
+}
+
+.menu {
+    justify-content: center;  
+}
+
+.dropbtn {
+
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;   
+     
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    left: 50%; /* Centraliza o dropdown horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*Menu-fim*/
+/*Banner*/
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    /*width: 300%;*/
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*Banner-fim*/
+
+/*Marcas*/
+
+.marcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+
+.btn-marcas{
+    
+    background-color: #333;
+    border-radius: 3px;
+
+}
+/*Marcas-fim*/
+
+/*Produtos*/
+
+.title-product{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 30px;
+    
+   
+}
+
+.title-product h2{
+    margin-right: 70%;
+    padding-left: 13px;
+    
+}
+
+.title-product a {
+    text-decoration: none;
+    color: #333;
+    padding-top: 10px;
+     
+}
+
+.title-product img {
+    background-color: #00A9E0;
+    border-radius: 10px;
+    padding: 5px;
+
+
+
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.carrocel-product{
+    display: flex;
+    margin-bottom: 4%;
+    gap: 5px;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+article img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*Produtos - fim*/
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
