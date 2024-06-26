@@ -224,6 +224,12 @@ nav ul li a {
 
 /*Produtos*/
 
+
+.product{
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
 .title-product{
     width: 80%;
     display: flex;
@@ -302,6 +308,7 @@ nav ul li a {
 .carousel-product .img-product {
   width: 100%;
   transition: all 0.3s;
+  z-index: 40;
 }
 
 /* Card*/
@@ -332,15 +339,15 @@ nav ul li a {
 
 .favorit{
     position: absolute;
-    top: 55%;
+    top: 40%;
     right: 10px;
     cursor: pointer;
 }
 
 .stars{
     position: absolute;
-    top: 56%;
-    right:60%;
+    top: 50%;
+    right:53%;
 }
 
 
