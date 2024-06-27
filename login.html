@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"  rel="stylesheet">
+    <link rel="icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Logitech</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="top-bar">
+            <div class="container text-center">
+
+                <a href="./index.html" class="logo"><img src="./img/Logo-Logitech.svg" alt="Logo-Logitech"></a>
+
+                <input class="search" type="text" placeholder="Pesquisar..." name="search">
+                <button class="btn-header" type="submit">
+                    <img class="icn-header" src="./img/icn/Componentes/Ic-Ic_pesquisa.svg" alt="search"></button>
+                <button class="btn-header icn-header-space align-items-end" type="button"><a href="#">
+                    <img class="icn-header " src="./img/icn/Componentes/Ic-Ic_carrinho.svg"></a></button>
+                <button class="btn-header icn-header-space " type="button"><a href="./login.html">
+                    <img class="icn-header " src="./img/icn/Componentes/Ic-Ic_perfil.svg"></a></button>
+
+            </div>
+        </div>
+        <div class="top-bar menu">
+            <nav>
+                <ul>
+                    <li class="dropdown"><button class="dropbtn">GAMING</button>
+                        <div class="dropdown-content">
+                            <a href="#">Mouse</a>
+                            <a href="#">Mousepads</a>
+                            <a href="#">Teclado</a>
+                            <a href="#">Volante</a>
+                            <a href="#">Controle</a>
+                            <a href="#">Simuladores</a>
+                            <a href="#">Headset</a>
+                            <a href="#">Fones de ouvido</a>
+                        </div>
+                    </li>
+                    <li><a href="#">VÍDEO</a></li>
+                    <li><a href="#">ÁUDIO</a></li>
+                    <li><a href="#">NOTEBOOKS</a></li>
+                    <li><a href="#">ROUPAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="login">
+
+        <h1 class="login-title"><a href="" >Sing-in</a></h1>
+        <form action="index.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="name" size="50" maxlength="100" required pattern="[aA-zZ\s]+$" placeholder="Seu nome completo: Roberto Augusto"> 
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" size="50" maxlength="100" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Coloque seu email aqui: alicia@games.com"> 
+            <br><br>     
+
+            <label for="date">Data de nascimento:</label>
+            <input type="date" name="date" size="50" maxlength="50" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" placeholder="xx\xx\xxxx"> 
+            <br><br>     
+            
+            <p>
+                <label for="atracoes">Atrações:</label>
+
+            </p>
+            <p>            
+                <input type="radio" name="atracoes" id="atracao1" >
+                <label for="atracao1"> Jardim Botânico de Curitiba</label>
+            </p>
+            <p>            
+                <input type="radio" name="atracoes" id="atracao2" >
+                <label for="atracao2"> Parque Tanguá</label>
+            </p>
+            <p>            
+                <input type="radio" name="atracoes" id="atracao3" >
+                <label for="atracao3"> Museu Oscar Niemeyer | MON</label>
+            </p>        
+            
+            
+            <input type="submit" name="enviar" value="Enviar">            
+            <input type="reset" nome="reset" value="Limpar">
+                
+        </form>
+
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Logitech. Todos os direitos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

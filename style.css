@@ -396,6 +396,31 @@ nav ul li a {
 }
 
 
+/*Login*/
+
+.login{
+    width: 65%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.login-title a{
+    display: flex;
+    text-decoration: none;
+    color: #00A9E0;
+
+}
+
+.login input{
+    border-radius: 10px;
+}
+
+
 
 footer {
     background-color: #333;
