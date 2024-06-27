@@ -4,7 +4,7 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    
+
 }
 
 img {
@@ -12,7 +12,7 @@ img {
     outline: none;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,10 +20,10 @@ section{
     text-align: center;
 }
 
-button{
+button {
     border: none;
     outline: none;
-    
+
 }
 
 
@@ -31,7 +31,7 @@ button{
 .container {
     margin-top: 3%;
     width: 90%;
-    
+
 }
 
 header {
@@ -46,7 +46,7 @@ header {
 }
 
 .logo {
-    
+
     float: left;
 
 }
@@ -68,11 +68,11 @@ header nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #000;
-    
+
 }
 
 
-.search{
+.search {
     display: flex;
     width: 437px;
     height: 2.5rem;
@@ -80,12 +80,12 @@ nav ul li a {
     float: left;
     padding: 5px;
     padding-left: 10px;
-    margin: 3px 5px 0 40px ;
-    
+    margin: 3px 5px 0 40px;
+
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    
+
 }
 
 .btn-header {
@@ -96,12 +96,12 @@ nav ul li a {
     outline: none;
     margin: 0;
     padding: 0;
-   
+
 
     float: left;
     border-radius: 10px;
     background: #00A9E0;
-    margin-right: 15px;   
+    margin-right: 15px;
 }
 
 .icn-header {
@@ -109,13 +109,13 @@ nav ul li a {
     height: 1.5rem;
 }
 
-.icn-header-space{
+.icn-header-space {
     margin-left: 10rem;
     justify-content: end;
 }
 
 .menu {
-    justify-content: center;  
+    justify-content: center;
 }
 
 .dropbtn {
@@ -123,8 +123,8 @@ nav ul li a {
     background-color: #f8f8f8;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;   
-     
+    font-weight: 500;
+
 
 }
 
@@ -138,11 +138,13 @@ nav ul li a {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
-    left: 50%; /* Centraliza o dropdown horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+    left: 50%;
+    /* Centraliza o dropdown horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta a posição para centralizar */
 }
 
 .dropdown-content a {
@@ -158,9 +160,6 @@ nav ul li a {
     display: block;
 }
 
-
-
-
 /*Menu-fim*/
 /*Banner*/
 
@@ -168,7 +167,7 @@ nav ul li a {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -192,12 +191,15 @@ nav ul li a {
     0% {
         transform: translateX(0%);
     }
+
     33% {
         transform: translateX(-100%);
     }
+
     66% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -207,54 +209,58 @@ nav ul li a {
 
 /*Marcas*/
 
-.marcas{
+.marcas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 10px;
 }
 
-.btn-marcas{
-    
+.btn-marcas {
+
     background-color: #333;
     border-radius: 3px;
 
 }
+
 /*Marcas-fim*/
 
 /*Produtos*/
-
-
-.product{
+.product {
+    margin: 0 auto;
     margin-bottom: 5%;
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.title-product{
+.title-product {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     margin-top: 3%;
-    margin-bottom: 3%;
+
     background-color: #f9f9f9;
     padding: 10px;
     border-radius: 30px;
-    
-   
+
+
 }
 
-.title-product h2{
+.title-product h2 {
     margin-right: 70%;
     padding-left: 13px;
-    
+
 }
 
 .title-product a {
     text-decoration: none;
     color: #333;
     padding-top: 10px;
-     
+
 }
 
 .title-product img {
@@ -268,114 +274,126 @@ nav ul li a {
 
 /*carrocel*/
 
-#img1, #img2{
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12 {
     visibility: hidden;
 }
 
 .carousel-product {
-  position: relative;
-  width: 80%;
-  overflow: hidden;
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+   
 }
 
 .carousel-imgs {
-  width: 120%;
-  display: flex;
-  gap: 20px;
+    width: 160%;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;    
 }
 
-.carousel-product input[type='radio']:checked:nth-child(1) ~ .carousel-imgs {
-  transform: translateX(0);
+.carousel-product input[type='radio']:checked:nth-child(1)~.carousel-imgs {
+    transform: translateX(0);
 }
 
-.carousel-product input[type='radio']:checked:nth-child(2) ~ .carousel-imgs {
-  transform: translateX(-80%);
+.carousel-product input[type='radio']:checked:nth-child(2)~.carousel-imgs {
+    transform: translateX(-80%);
 }
 
 .carousel-nav label {
-  cursor: pointer;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #00A9E0;
-  margin: 10px;
-  border-radius: 15px;
-}
-.carousel-nav label:hover{
-  background: #000;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #00A9E0;
+    margin: 10px;
+    border-radius: 15px;
 }
 
+.carousel-nav label:hover {
+    background: #000;
+}
+
+
 .carousel-product .img-product {
-  width: 100%;
-  transition: all 0.3s;
-  z-index: 40;
+    
+    align-items: center;
+    transition: all 0.3s;
+    z-index: 40;
+    
+    
 }
 
 /* Card*/
-.card{
-  border: none;
-  margin-left: 3px;
+.card {
+    border: none;
+    margin-bottom: 3%;
 }
 
 .card-body {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    margin-top: -60px;
     padding-top: 80px;
     text-align: left;
+    padding: auto;
+    justify-content: space-between;
+
 }
 
-.card-body a{
+.card-body a {
     width: 100%;
-    height: 30%;
+    height: auto;
     background: #333;
     border: none;
+
 }
 
-.card-body p{
-    font:caption;
-    font-weight: 100px;
+.card-body p {
+    font-weight: 50px;
+    font-size: smaller;
 }
 
-.favorit{
+.favorit {
     position: absolute;
-    top: 40%;
+    top: 280px;
     right: 10px;
     cursor: pointer;
 }
 
-.stars{
+.stars {
     position: absolute;
-    top: 50%;
-    right:53%;
+    top: 310px;
 }
 
 
 /*Produtos - fim*/
 
 /*miniBanner*/
-.miniBanner{
-    width: 80%;
-    display: inline;
-    margin-left: 10%;
-    justify-items: center;
+.miniBanner {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
 }
 
-.miniBanner img{
-    width: 400px;
-    height: fit-content;
+.miniBanner img {
+    padding: 20px;
 }
+
 /*miniBanner*/
 
 /*PromBanner*/
-.prmotionBanner{
+.prmotionBanner {
     margin-top: 10%;
     margin-bottom: 5%;
 }
-
-
-
-
 
 
 
